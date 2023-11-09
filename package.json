@@ -6,11 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.2"
+    "@heroicons/react": "2.0.18",
+    "@reduxjs/toolkit": "1.9.7",
+    "framer-motion": "10.16.4",
+    "next": "14.0.2",
+    "react": "18",
+    "react-dom": "18",
+    "react-redux": "8.1.3"
+  },
+  "devDependencies": {
+    "sass": "1.69.5",
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
