@@ -1,0 +1,44 @@
+@use 'colors' as clr;
+@use 'utils' as utl;
+
+.sideBar {
+  width: 20rem;
+  border-left: 1px solid clr.$main;
+
+  .suggestList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+
+      .hashtag {
+        font-size: 1.12rem;
+        font-weight: 700;
+        color: clr.$main;
+      }
+
+      .forum {
+        font-size: 1.12rem;
+        font-weight: 500;
+      }
+
+      .action {
+        font-size: .88rem;
+        font-weight: 600;
+        color: clr.$main;
+      }
+    }
+  }
+
+  .line {
+    @include utl.separation_line;
+  }
+}
