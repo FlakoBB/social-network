@@ -1,22 +1,22 @@
 import SuggestionContainer from './pure/SuggestionContainer'
 import styles from '@/styles/sidebar.module.scss'
+import UserInfo from './pure/UserInfo'
 
-// ToDo: Add subcomponents that make up the SideBar
 const SideBar = () => {
   return (
     <aside className={styles.sideBar}>
-      <SuggestionContainer title='Quiza quuieras seguir a...'>
+      <SuggestionContainer title='Quiza quieras seguir a...'>
         <ul className={styles.suggestList}>
           <li>
-            <div>Usuario</div> {/* // ToDo: replace with User component */}
+            <UserInfo />
             <span className={styles.action}>Seguir</span>
           </li>
           <li>
-            <div>Usuario</div> {/* // ToDo: replace with User component */}
+            <UserInfo />
             <span className={styles.action}>Seguir</span>
           </li>
           <li>
-            <div>Usuario</div> {/* // ToDo: replace with User component */}
+            <UserInfo />
             <span className={styles.action}>Seguir</span>
           </li>
         </ul>

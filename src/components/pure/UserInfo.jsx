@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from '@/styles/userInfo.module.scss'
 
 const UserInfo = () => {
+  // ToDo: receive user data (picture, name, workstation) by props from API
   return (
     <div className={styles.figure}>
       <figure className={styles.user}>
