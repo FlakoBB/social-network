@@ -1,15 +1,15 @@
-import Image from "next/image";
-import styles from "@/styles/userInfo.module.scss";
+import Image from 'next/image'
+import styles from '@/styles/userInfo.module.scss'
 
 const UserInfo = () => {
   return (
     <div className={styles.figure}>
       <figure className={styles.user}>
         <Image
-          src={"/images/profilePictures/Fede.png"}
+          src='/images/profilePictures/Fede.png'
           width={48}
           height={48}
-          alt="Federico Diaz. FullStack Developer"
+          alt='Federico Diaz. FullStack Developer'
         />
       </figure>
       <div>
@@ -17,7 +17,7 @@ const UserInfo = () => {
         <p className={styles.workstation}>FullStack Developer</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default UserInfo;
+export default UserInfo

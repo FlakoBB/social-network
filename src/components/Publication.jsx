@@ -1,13 +1,13 @@
-import styles from "@/styles/publication.module.scss";
-import UserInfo from "./pure/UserInfo";
+import styles from '@/styles/publication.module.scss'
+import UserInfo from './pure/UserInfo'
 import {
   HeartIcon,
   BookmarkIcon,
   EllipsisVerticalIcon,
   ArrowUturnRightIcon,
-  ChatBubbleLeftEllipsisIcon,
-} from "@heroicons/react/24/solid";
-import Image from "next/image";
+  ChatBubbleLeftEllipsisIcon
+} from '@heroicons/react/24/solid'
+import Image from 'next/image'
 // Componente de las publicaciones.
 const Publication = () => {
   return (
@@ -28,10 +28,10 @@ const Publication = () => {
           </p>
           <figure className={styles.figure}>
             <Image
-              src={"/images/others/herramientas.png"}
+              src='/images/others/herramientas.png'
               width={600}
               height={300}
-              alt=""
+              alt=''
             />
           </figure>
         </div>
@@ -61,7 +61,7 @@ const Publication = () => {
         </button>
       </footer>
     </article>
-  );
-};
+  )
+}
 
-export default Publication;
+export default Publication

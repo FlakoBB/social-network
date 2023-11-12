@@ -1,37 +1,37 @@
 @use "colors" as clr;
-@use "utils" as clt;
+@use "utils" as utl;
 
 .publication {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   width: 100%;
-  max-width: 480px;
+  // max-width: 480px;
   height: auto;
   max-height: 25.5rem;
   padding: 0.3rem 0.8rem;
-  margin: {
-    left: auto;
-    right: auto;
-  }
-  border-radius: 0.2rem;
+  border-radius: .5rem;
   border: 1px solid clr.$main;
+
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .agoTime {
     position: relative;
     top: 0.55rem;
     font-size: 0.8rem;
     color: clr.$main;
   }
+
   .contentDiv {
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
+
   .main {
     flex-grow: 1;
     display: flex;
@@ -40,13 +40,16 @@
     gap: 0.5rem;
     width: 100%;
   }
+
   .pubContent {
     flex-grow: 1;
   }
+
   .description {
     color: clr.$text;
     margin-bottom: 0.5rem;
   }
+
   .figure {
     width: 100%;
     overflow: hidden;
@@ -57,12 +60,14 @@
       object-position: center;
     }
   }
+
   .reactions {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 0.8rem;
   }
+
   .spanCircle {
     display: block;
     width: 0.3rem;
@@ -70,25 +75,30 @@
     border-radius: 50%;
     background-color: clr.$main;
   }
+
   .spanReaction {
     color: rgba($color: clr.$text, $alpha: 0.5);
   }
+
   .button {
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
   }
+
   .iconActive,
   .icon {
     fill: clr.$text;
     width: 1.5rem;
     height: auto;
   }
+
   .iconActive {
     fill: clr.$main;
   }
+
   .footer {
-    @include clt.separation_line;
+    @include utl.separation_line;
     display: flex;
     align-items: center;
     justify-content: space-between;
