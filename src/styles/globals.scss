@@ -16,6 +16,9 @@ body {
   background-color: clr.$background;
 
   .mainContainer {
+    display: grid;
+    grid-template-columns: 16rem auto 20rem;
+    gap: 1rem;
     max-width: 1120px;
     margin: auto;
   }

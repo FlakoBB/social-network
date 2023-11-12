@@ -1,0 +1,6 @@
+@use 'colors' as clr;
+
+@mixin separation_line {
+  border: none;
+  border-top: 1px solid clr.$main;
+}
