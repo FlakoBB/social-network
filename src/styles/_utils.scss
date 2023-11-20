@@ -4,3 +4,14 @@
   border: none;
   border-top: 1px solid clr.$main;
 }
+
+@mixin border_button {
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  color: clr.$main;
+  font-weight: 600;
+  font-family: inherit;
+  border: 1px solid clr.$main;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
