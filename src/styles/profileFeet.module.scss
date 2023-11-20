@@ -35,7 +35,7 @@
 
   }
 
-  .info {
+  .profile {
     position: relative;
     z-index: 10;
     width: 100%;
@@ -45,7 +45,7 @@
     align-items: end;
   }
 
-  .user {
+  .userImg {
     width: 10rem;
     height: 10rem;
 
@@ -60,7 +60,7 @@
 
   }
 
-  .description {
+  .profileInfo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -74,13 +74,13 @@
     align-items: center;
   }
 
-  .titleWork {
+  .role {
     font-size: 1.5rem;
     font-weight: 400;
     opacity: 0.5;
   }
 
-  .name {
+  .userName {
     font-size: 2rem;
   }
 
@@ -88,13 +88,19 @@
     color: clr.$main;
   }
 
-  .pubs {
+  .description {
+    font-size: 0.8rem;
+    line-height: 0.85rem;
+    font-weight: 500;
+  }
+
+  .actions {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
   }
 
-  .pub {
+  .publications {
     flex-basis: 30rem;
     display: flex;
     flex-direction: column;
@@ -102,7 +108,7 @@
     gap: 2rem;
   }
 
-  .rel {
+  .suggestion {
     flex-basis: 20rem;
     border-left: 1px solid clr.$main;
   }

@@ -16,8 +16,8 @@ const ProfileFeet = () => {
             alt='banner'
           />
         </figure>
-        <div className={styles.info}>
-          <figure className={styles.user}>
+        <div className={styles.profile}>
+          <figure className={styles.userImg}>
             <Image
               src='/images/profilePictures/DanielaMelchior.png'
               width={250}
@@ -28,16 +28,16 @@ const ProfileFeet = () => {
           <button className={styles.button}>Editar perfil</button>
         </div>
       </header>
-      <section className={styles.description}>
+      <section className={styles.profileInfo}>
         <header className={styles.headerDescription}>
           <div>
-            <h1 className={styles.name}>Daniela Melchior</h1>
-            <h2 className={styles.titleWork}>Front-End Developer</h2>
+            <h1 className={styles.userName}>Daniela Melchior</h1>
+            <h2 className={styles.role}>Front-End Developer</h2>
           </div>
           <span className={styles.span}>1.3 M seguidores</span>
           <span className={styles.span}>720 seguidos</span>
         </header>
-        <p>
+        <p className={styles.description}>
           Hola! Soy una apasionada desarrolladora web front end con un amor
           desbordante por convertir ideas creativas en experiencias digitales
           cautivadoras. Mi código es como un lienzo en blanco que cobra vida con
@@ -46,11 +46,11 @@ const ProfileFeet = () => {
         </p>
         <button className={styles.button}>Crear Publicación</button>
       </section>
-      <section className={styles.pubs}>
-        <div className={styles.pub}>
+      <section className={styles.actions}>
+        <div className={styles.publications}>
           <Publication />
         </div>
-        <div className={styles.rel}>
+        <div className={styles.suggestion}>
           <SuggestionContainer title='Perfiles relacionados'>
             <UserInfo />
             <UserInfo />
