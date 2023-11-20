@@ -1,7 +1,7 @@
 import ProfileFeet from '@/components/ProfileFeet'
 import SideMenu from '@/components/SideMenu'
 
-const Page = () => {
+const PageProfile = () => {
   return (
     <main className='mainContainer'>
       <SideMenu />
@@ -10,4 +10,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default PageProfile
