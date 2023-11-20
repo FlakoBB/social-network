@@ -2,7 +2,7 @@
 @use 'utils' as clu;
 
 .mainContainer {
-  width: 100%;
+  width: 90%;
   display: flex;
   gap: 30px
 }
@@ -104,6 +104,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
+    gap: 1rem
   }
 
   .publications {
@@ -112,10 +113,12 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    flex: 3
   }
 
   .suggestion {
     flex-basis: 20rem;
     border-left: 1px solid clr.$main;
+    flex: 1
   }
 }

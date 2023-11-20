@@ -8,7 +8,7 @@
   width: 100%;
   // max-width: 480px;
   height: auto;
-  max-height: 25.5rem;
+  // max-height: 25.5rem;
   padding: 0.3rem 0.8rem;
   border-radius: .5rem;
   border: 1px solid clr.$main;
@@ -53,6 +53,7 @@
   .figure {
     width: 100%;
     overflow: hidden;
+
     img {
       max-width: 100%;
       height: auto;
