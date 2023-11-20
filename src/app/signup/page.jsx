@@ -1,5 +1,5 @@
-import SignUpForm from '@/components/SignUp/SignUpForm'
-import styles from '@/styles/signup/signup.module.scss'
+import SignUpForm from '@/components/pure/forms/SignUpForm'
+import styles from '@/styles/signup.module.scss'
 import Image from 'next/image'
 
 const SignUp = () => {

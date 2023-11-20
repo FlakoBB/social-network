@@ -1,6 +1,6 @@
-@use '../colors' as clr;
-@use '../utils' as utl;
-@use '../media-queries' as mqr;
+@use 'colors' as clr;
+@use 'utils' as utl;
+@use 'media-queries' as mqr;
 
 .container {
   display: flex;
@@ -10,7 +10,7 @@
 
 }
 
-.loginContainer {
+.signupContainer {
   border: 1px solid clr.$main ;
   border-radius: 8px;
   display: flex;

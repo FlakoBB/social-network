@@ -1,6 +1,6 @@
-import LoginForm from '@/components/Login/LoginForm'
+import LoginForm from '@/components/pure/forms/LoginForm'
 import Image from 'next/image'
-import styles from '@/styles/login/login.module.scss'
+import styles from '@/styles/login.module.scss'
 
 const Login = () => {
   return (

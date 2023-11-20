@@ -1,4 +1,4 @@
-import styles from '@/styles/signup/signup.module.scss'
+import styles from '@/styles/signup.module.scss'
 import Link from 'next/link'
 
 const SignUpForm = () => {
