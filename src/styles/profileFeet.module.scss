@@ -1,8 +1,14 @@
 @use 'colors' as clr;
 @use 'utils' as clu;
 
+.mainContainer {
+  width: 100%;
+  display: flex;
+  gap: 30px
+}
+
 .main {
-  max-width: 848px;
+  max-width: 98%;
   padding-top: 0.5rem;
 
   .header {
