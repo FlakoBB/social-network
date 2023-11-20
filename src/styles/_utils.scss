@@ -16,6 +16,16 @@
   cursor: pointer;
 }
 
+@mixin solid_button {
+  background: clr.$main;
+  width: 100%;
+  padding: 3px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none
+}
+
 @mixin input_styles {
   width: 100%;
   height: 30px;

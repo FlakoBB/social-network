@@ -22,7 +22,7 @@ const SignUpForm = () => {
         <input type='password' />
       </div>
       <button type='submit'>Registrar</button>
-      <Link className={styles.Link} href='*'>Iniciar sesión</Link>
+      <Link className={styles.Link} href='login'>Iniciar sesión</Link>
     </form>
   )
 }
