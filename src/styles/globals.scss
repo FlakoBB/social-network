@@ -22,4 +22,8 @@ body {
     max-width: 1120px;
     margin: auto;
   }
+  .mainProfile {
+    @extend .mainContainer;
+    grid-template-columns: 16rem 1fr;
+  }
 }
