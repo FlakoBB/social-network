@@ -22,8 +22,36 @@ body {
     max-width: 1120px;
     margin: auto;
   }
+
   .mainProfile {
     @extend .mainContainer;
     grid-template-columns: 16rem 1fr;
   }
+}
+
+// styles for the scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  z-index: -1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  opacity: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #c9c9c9;
+  opacity: 10px;
+  border-radius: 10px;
 }
