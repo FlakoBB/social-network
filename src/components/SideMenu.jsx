@@ -1,7 +1,67 @@
+'use client'
 import styles from '@/styles/sideMenu.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import { HomeIcon, UserIcon, MagnifyingGlassIcon, PlusIcon, BellIcon, PaperAirplaneIcon, BookmarkIcon, ChatBubbleLeftRightIcon, Cog6ToothIcon } from '@heroicons/react/24/solid'
+import { usePathname } from 'next/navigation'
+
+const SectionLink = ({ href, icon, value }) => {
+  const pathname = usePathname()
+  return (
+    <Link href={href} className={`${styles.link} ${pathname === href && styles.active}`}>
+      {icon}
+      {value}
+    </Link>
+  )
+}
+
+const LINKS = [
+  {
+    value: 'Inicio',
+    href: '/',
+    icon: <HomeIcon className={styles.icon} />
+  },
+  {
+    value: 'Perfil',
+    href: '/profile',
+    icon: <UserIcon className={styles.icon} />
+  },
+  {
+    value: 'Buscar',
+    href: '/search',
+    icon: <MagnifyingGlassIcon className={styles.icon} />
+  },
+  {
+    value: 'Publicar',
+    href: '/post',
+    icon: <PlusIcon className={styles.icon} />
+  },
+  {
+    value: 'Notificaciones',
+    href: '/notifications',
+    icon: <BellIcon className={styles.icon} />
+  },
+  {
+    value: 'Mensajes',
+    href: '/messages',
+    icon: <PaperAirplaneIcon className={styles.icon} />
+  },
+  {
+    value: 'Foros',
+    href: '/forums',
+    icon: <ChatBubbleLeftRightIcon className={styles.icon} />
+  },
+  {
+    value: 'Guardado',
+    href: '/saved',
+    icon: <BookmarkIcon className={styles.icon} />
+  },
+  {
+    value: 'Configuración',
+    href: '/settings',
+    icon: <Cog6ToothIcon className={styles.icon} />
+  }
+]
 
 const SideMenu = () => {
   return (
@@ -18,42 +78,9 @@ const SideMenu = () => {
       </div>
       <hr className={styles.separationLine} />
       <nav className={styles.menu}>
-        <Link href='/' className={styles.link}>
-          <HomeIcon className={styles.icon} />
-          Inicio
-        </Link>
-        <Link href='/' className={styles.link}>
-          <UserIcon className={styles.icon} />
-          Perfil
-        </Link>
-        <Link href='/' className={styles.link}>
-          <MagnifyingGlassIcon className={styles.icon} />
-          Buscar
-        </Link>
-        <Link href='/' className={styles.link}>
-          <PlusIcon className={styles.icon} />
-          Publicar
-        </Link>
-        <Link href='/' className={styles.link}>
-          <BellIcon className={styles.icon} />
-          Notificaciones
-        </Link>
-        <Link href='/' className={styles.link}>
-          <PaperAirplaneIcon className={styles.icon} />
-          Mensajes
-        </Link>
-        <Link href='/' className={styles.link}>
-          <ChatBubbleLeftRightIcon className={styles.icon} />
-          Foros
-        </Link>
-        <Link href='/' className={styles.link}>
-          <BookmarkIcon className={styles.icon} />
-          Guardado
-        </Link>
-        <Link href='/' className={styles.link}>
-          <Cog6ToothIcon className={styles.icon} />
-          Configuración
-        </Link>
+        {
+          LINKS.map((link, index) => <SectionLink href={link.href} icon={link.icon} value={link.value} key={index} />)
+        }
       </nav>
     </aside>
   )

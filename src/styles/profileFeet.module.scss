@@ -10,6 +10,7 @@
 .main {
   max-width: 98%;
   padding-top: 0.5rem;
+  grid-column: 2 / -1;
 
   .header {
     position: relative;

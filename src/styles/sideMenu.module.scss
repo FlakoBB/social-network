@@ -70,10 +70,45 @@
       font-size: 1.25rem;
       font-weight: 600;
       text-decoration: none;
+      position: relative;
+      transition: opacity .2s linear;
       
       .icon {
         width: 1.5rem;
         height: auto;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: 0;
+        bottom: -4px;
+        border-top: 2px solid clr.$text;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .2s ease-out;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      &:hover {
+        opacity: .6;
+      }
+
+      &.active {
+        color: clr.$main;
+
+        .icon {
+          fill: clr.$main;
+        }
+
+        &::after {
+          border-top: 2px solid clr.$main;
+        }
       }
     }
   }
